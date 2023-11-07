@@ -1,0 +1,60 @@
+:root {
+    --primary-color-light: #FAF4EA;
+    --primary-color-dark: #31261A;
+    --primary-color: #819B57;
+    --secondaty-color-light: #CFCFBC;
+    --secondaty-color-dark: #A18268;
+    --secondaty-color: #465929;
+}
+
+body {
+    background-color:rgb(152, 240, 240);
+    color: var(--primary-color-dark);
+    font-family: 'Poppins', sans-serif;
+    font-style: 18px;
+}
+
+/* main */
+ul {
+    list-style-type: none;
+}
+
+.accent {
+    color: var(--primary-color);
+}
+h1 > span:last-of-type {
+    color: var(--primary-color-light);
+}
+
+.main-priority {
+    color: var(--primary-color-light);
+}
+
+/* Button */
+
+.button {
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var( --primary-color-light);
+    width: 238px;
+    height: 59px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var( --secondaty-color);
+}
+
+/*  */
+
+.list {
+    text-decoration: none;
+    color: var(--primary-color-light);
+}
+
+.list:hover {
+    color: var(--primary-color);
+}
