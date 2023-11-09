@@ -1,3 +1,35 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-300.woff') format('woff'),
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-600.woff') format('woff')
+}
+        
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-900.woff') format('woff')
+}
+
 :root {
     --primary-color-light: #FAF4EA;
     --primary-color-dark: #31261A;
@@ -8,27 +40,64 @@
 }
 
 body {
-    background-color:rgb(152, 240, 240);
+    /*background-color: var(--primary-color-light);*/
     color: var(--primary-color-dark);
     font-family: 'Poppins', sans-serif;
-    font-style: 18px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+address {
+    font-style: normal;
 }
 
 /* main */
+
+.hero {
+    color: var(--primary-color-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+}
+
 ul {
     list-style-type: none;
 }
 
+
 .accent {
     color: var(--primary-color);
+} 
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
 }
-h1 > span:last-of-type {
+
+
+.priority {
+    color: var(--primary-color-light);
+    background-color: var(--primary-color);
+    font-size: 20px;
+}
+
+/* Headlines */
+
+h2 {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.rooms {
+    font-size: 24px;
     color: var(--primary-color-light);
 }
 
-.main-priority {
-    color: var(--primary-color-light);
-}
 
 /* Button */
 
@@ -40,7 +109,8 @@ h1 > span:last-of-type {
     width: 238px;
     height: 59px;
     cursor: pointer;
-
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -57,4 +127,37 @@ h1 > span:last-of-type {
 
 .list:hover {
     color: var(--primary-color);
+    font-weight: 600;
+}
+
+.rooms-description {
+    font-weight: 300;
+    color: var(--primary-color-light);
+}
+
+.text-forms {
+    color: var(--secondaty-color-dark);
+}
+
+/* footer */
+
+.address-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--primary-color-light);
+}
+
+.address-link:hover {
+    color: var(--secondaty-color-light);
+}
+
+.address-link {
+    color: var(--primary-color-light);
+    font-size: 16px;
+    text-decoration:none;
+}
+
+.address-copirate {
+    color: var(--secondaty-color-dark);
+    font-size: 14px;
 }
