@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--primary-color-light);
+    width: 238px;
+    height: 59px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--secondaty-color);
+}

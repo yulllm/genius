@@ -1,0 +1,108 @@
+.cookers-section {
+
+    &__title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 600;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 40px;
+            margin: 0 auto 80px;
+            position: relative;
+        }
+
+        &--centered {
+            text-align: center;
+        }
+    }
+
+
+    &__title::before,
+    &__title::after {
+
+        @media screen and (min-width:$bp-desktop) {
+            content: '';
+            width: 352px;
+            height: 2px;
+            background: var(--secondaty-color-light);
+            position: absolute;
+            bottom: 24px;
+            // не забирає лінії, бо підтягує змінну на таблет
+        }
+    }
+
+
+    &__title::before {
+        left: 0;
+    }
+
+    &__title::after {
+        right: 0;
+    }
+
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        // не працює gap
+
+        @media screen and (min-width:$bp-tablet) {
+            gap: 40px 30px;
+            flex-direction: row;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 18px;
+        }
+
+        & p {
+            margin-bottom: 24px;
+        }
+
+        & p:last-child {
+            margin-bottom: 0;
+
+            @media screen and (min-width:$bp-tablet) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__item {
+
+        @media screen and (min-width:$bp-tablet) {
+            flex-basis: calc((100% - 30px)/2);
+        }
+
+    }
+
+    &__card {
+        gap: 16px;
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (min-width:$bp-tablet) {
+            gap: 30px;
+        }
+    }
+
+
+    &__foto {
+        width: 140px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--primary-color-light),
+            -16px 16px 0 1px var(--secondaty-color-dark);
+        height: fit-content;
+
+        @media screen and (min-width:$bp-tablet) {
+            width: 240px;
+        }
+    }
+}

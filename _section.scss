@@ -1,0 +1,22 @@
+.section {
+
+    padding: 20px 0;
+
+    @media screen and (min-width:$bp-desktop) {
+        padding: 48px 0;
+    }
+
+}
+
+.accent {
+    color: var(--primary-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.uppercase:not(last-child) {
+    font-weight: 400;
+}
